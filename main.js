@@ -21,3 +21,24 @@ button.addEventListener("click", () => {
 });
 
 function func() {}
+
+// homework
+const counter = document.querySelector(".zero");
+const buttonFirst = document.querySelector(".plus_one");
+const buttonSecond = document.querySelector(".reset");
+
+let number1 = 0;
+
+buttonFirst.addEventListener("click", () => {
+  console.log("clicked");
+  number1++;
+
+  counter.textContent = number1;
+});
+
+buttonSecond.addEventListener("click", () => {
+  console.log("clicked");
+  number1 = 0;
+
+  counter.textContent = number1;
+});
