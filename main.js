@@ -23,7 +23,7 @@ button.addEventListener("click", () => {
 function func() {}
 
 // homework
-const counter = document.querySelector(".zero");
+const counter1 = document.querySelector(".zero");
 const buttonFirst = document.querySelector(".plus_one");
 const buttonSecond = document.querySelector(".reset");
 
@@ -33,12 +33,36 @@ buttonFirst.addEventListener("click", () => {
   console.log("clicked");
   number1++;
 
-  counter.textContent = number1;
+  counter1.textContent = number1;
 });
 
 buttonSecond.addEventListener("click", () => {
   console.log("clicked");
   number1 = 0;
 
-  counter.textContent = number1;
+  counter1.textContent = number1;
 });
+
+//
+
+const counter = document.getElementById("counter");
+const addOne = document.querySelector(".add_one");
+const reset = document.querySelector(".reset_btn");
+
+console.log(counter);
+console.log(addOne);
+console.log(reset);
+
+addOne.addEventListener("click", () => {
+  counter.textContent++;
+});
+
+reset.addEventListener("click", () => {
+  counter.textContent = 0;
+});
+
+// addOne.addEventListener("click", (event) => {
+//   console.log(event.target);
+// });
+
+// += - add the number next to it
