@@ -61,6 +61,23 @@ reset.addEventListener("click", () => {
   counter.textContent = 0;
 });
 
+const div = document.querySelector(".parent");
+console.log(div.innerHTML);
+
+const someText = "placeholder";
+
+div.innerHTML += ` <section>
+        <div class="card">
+          some card
+          <img src="" alt="" />
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quia dolorem est aut et soluta excepturi, fugit qui eum omnis 
+        tempora voluptatem, id sit quae quidem repellat, in expedita
+        laudantium facere?</p>
+        <p> ${someText} </p>
+      </section>`;
+
 // addOne.addEventListener("click", (event) => {
 //   console.log(event.target);
 // });
@@ -78,3 +95,19 @@ someFunc();
 function someFunc() {
   console.log("running");
 }
+
+//
+for (let i = 0; i < 10; i++) {}
+
+// - strings and arrays - for of
+
+let array = ["banana", "apple"];
+for (let fruit of array) {
+  console.log(fruit);
+}
+
+// works only on array
+
+array.forEach((element) => {
+  console.log(element);
+});
