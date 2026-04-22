@@ -22,9 +22,8 @@ products.forEach((element) => {
   parentBox.innerHTML += `
   <div class="card">
         <img src="${element.img}" alt="" />
-        <span></span>
-        <p></p>
+        <span>${element.price}</span>
+        <p>${element.name}</p>
       </div>
-  
   `;
 });
