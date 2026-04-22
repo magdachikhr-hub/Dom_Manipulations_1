@@ -66,3 +66,15 @@ reset.addEventListener("click", () => {
 // });
 
 // += - add the number next to it
+
+const arrowFunc = () => {
+  console.log("running");
+};
+
+arrowFunc();
+
+someFunc();
+
+function someFunc() {
+  console.log("running");
+}
