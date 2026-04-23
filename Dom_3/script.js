@@ -1,5 +1,6 @@
 const listElements = document.querySelectorAll(".todo_list");
 const parentElement = document.querySelector(".parent");
+const doneBtn = document.querySelector(".done_btn");
 
 console.log(listElements);
 
@@ -13,9 +14,20 @@ listElements.forEach((element) => {
 //innerHTML
 
 //
-const div = document.createElement("div");
+// const div = document.createElement("div");
 
-div.textContent = "i did my homework";
-console.log(div);
+// div.textContent = "i did my homework";
+// console.log(div);
 
-parentElement.append(div);
+// parentElement.append(div);
+
+let isClicked = false;
+
+doneBtn.addEventListener("click", () => {
+  if (!isClicked) {
+    const message = document.createElement("span");
+    message.textContent = "i have done all list activities";
+    parentElement.append(message);
+  }
+  isClicked = true;
+});

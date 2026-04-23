@@ -1,0 +1,8 @@
+.done_btn {
+  background-color: rgb(53, 158, 55);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 130px;
+  cursor: pointer;
+}
