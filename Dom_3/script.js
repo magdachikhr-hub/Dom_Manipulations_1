@@ -2,6 +2,12 @@ const listElements = document.querySelectorAll(".todo_list");
 const parentElement = document.querySelector(".parent");
 const doneBtn = document.querySelector(".done_btn");
 
+//
+const dropdown = document.querySelector(".drop_down");
+const optionsBtn = document.querySelector(".options");
+
+//
+
 console.log(listElements);
 
 listElements.forEach((element) => {
@@ -30,4 +36,18 @@ doneBtn.addEventListener("click", () => {
     parentElement.append(message);
   }
   isClicked = true;
+});
+
+//
+
+let clicked = false;
+
+optionsBtn.addEventListener("click", () => {
+  if (!clicked) {
+    const option = document.createElement("div");
+
+    option.textContent = "option";
+    dropdown.append(option);
+  }
+  clicked = true;
 });

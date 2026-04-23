@@ -6,3 +6,17 @@
   width: 130px;
   cursor: pointer;
 }
+
+.drop_down {
+  margin-top: 100px;
+
+  button {
+    background-color: rgb(170, 28, 9);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+}
