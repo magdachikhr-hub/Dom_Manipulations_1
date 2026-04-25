@@ -4,8 +4,8 @@ const doneBtn = document.querySelector(".done_btn");
 
 //
 const dropdown = document.querySelector(".drop_down");
-const optionsBtn = document.querySelector(".options");
-
+const optionsBtn = document.querySelector(".options_btn");
+const options = document.querySelector(".options");
 //
 
 console.log(listElements);
@@ -32,7 +32,7 @@ let isClicked = false;
 doneBtn.addEventListener("click", () => {
   if (!isClicked) {
     const message = document.createElement("span");
-    message.textContent = "i have done all list activities";
+    message.textContent = "i have done all listed activities";
     parentElement.append(message);
   }
   isClicked = true;
@@ -51,3 +51,16 @@ optionsBtn.addEventListener("click", () => {
   }
   clicked = true;
 });
+
+console.log(parentElement.children);
+
+options.classList.remove("display_none");
+options.classList.add("some_class");
+
+optionsBtn.addEventListener("click", () => {
+  options.classList.toggle("display_none");
+});
+
+// optionsBtn.addEventListener("click", () => {
+//   document.body.classList.toggle("dark_mode");
+// });
